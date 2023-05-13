@@ -19,13 +19,13 @@
 
 .card__body{
     background-color: #616161;
-    width: 90px;
+    width: 150px;
     margin-left: auto;
     margin-right: auto;
     height: 70%;
     display: flex;
-  align-items: center;
-  justify-content: center;
+    align-items: center;
+    justify-content: center;
 
 }
 

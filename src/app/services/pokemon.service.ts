@@ -2,10 +2,12 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { Observable } from 'rxjs';
-import { PokemonData } from '../models/pokemonData'
+import { PokemonData } from '../models/pokemonData';
+
 @Injectable({
   providedIn: 'root'
 })
+
 export class PokemonService {
   private baseURL:string = ""
   private pokeData:PokemonData | any
@@ -18,7 +20,7 @@ export class PokemonService {
     this.pokeData = this
                     .http
                     .get<PokemonData>
-                    (`${this.baseURL} ${pokemonName}`)
+                    (`${this.baseURL}${pokemonName}`)
     return this.pokeData
   }
 }
